@@ -1,0 +1,55 @@
+# ======================
+# Log files - ignore all kinds of logs
+# ======================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ======================
+# Dependency directories - should not be pushed to Git
+# ======================
+node_modules/
+
+# ======================
+# Build output directories - created after running build commands
+# ======================
+dist/
+dist-ssr/
+
+# ======================
+# Environment config files - may contain sensitive information
+# ======================
+.env
+.env.*.local
+*.local
+
+# ======================
+# Editor-specific folders and files
+# These are related to local IDE/editor settings and should be ignored
+# ======================
+.vscode/*               # Ignore everything in .vscode
+!.vscode/extensions.json  # But keep this file (used for sharing extensions)
+.idea/                  # JetBrains IDEs (like WebStorm, PhpStorm)
+.DS_Store               # macOS system file
+*.suo                   # Visual Studio user file
+*.ntvs*                 # Node.js Tools for Visual Studio
+*.njsproj               # Node.js project file for Visual Studio
+*.sln                   # Visual Studio solution file
+*.sw?                   # Vim temporary swap files (e.g., .swo, .swp)
+
+# ======================
+# Test coverage reports
+# Created when using tools like Jest or Istanbul
+# ======================
+coverage/
+
+# ======================
+# OS-generated files - not related to your project
+# ======================
+Thumbs.db               # Windows thumbnail cache
+ehthumbs.db             # Windows thumbnail cache
+Icon?                   # macOS custom folder icon files (Icon\r, Icon^M)

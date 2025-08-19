@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+*{
+  font-family: Poppins, system-ui;
+}
+
+.perfectCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxShadow{
+  box-shadow: 0px 0px 2px rgb(163, 163, 163);
+}
+
+.clickEffect:active{
+  transform: scale(0.93);
+  transition-duration: 0.4s;
+}
+
+
+/* When error is occure shake  */
+@layer utilities {
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+  .animate-shake {
+    animation: shake 0.4s ease-in-out;
+  }
+}
+
+/* ***** background hover effect for  logout ****** */
+.logoutHoverEffect{
+  background-color: #f51b1b;
+}
+
+
+/* ************ Here is Scroll bar CSS ************* */
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(107,114,128,0) transparent; /* Tailwind's gray-600 but transparent */
+
+  /* For Webkit browsers */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(107,114,128,0); /* Tailwind's gray-600 but transparent */
+    border-radius: 9999px;
+  }
+}
+
+.scrollbar-show:hover {
+  scrollbar-color: rgba(107,114,128,0.7) transparent;
+}
+
+.scrollbar-show:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(107,114,128,0.7);
+}
