@@ -33,37 +33,7 @@ It’s designed to give you the essential features of a modern chat app — send
 - Cloudinary (image uploads)  
 - JWT authentication  
 
-## Environment Variables
 
-Create a `.env` file in the root of your backend with the following variables:
-
-```env
-# Server
-PORT=5005
-DB_URI=mongodb://localhost:27017/Chatapp
-
-# JWT
-JWT_SECRET=your_jwt_secret_here
-JWT_EXPIRY=3days
-COOKIE_EXPIRE=5
-NODE_ENV=development
-
-# Password Reset
-RESET_PASSWORD_EXPIRE=10
-RESET_PASSWORD_URL=http://localhost:5173/userResetPassword/
-RP_SERVICE=gmail
-RP_USER_MAIL=your_email@gmail.com
-RP_USER_PASSWORD=your_app_password_here
-
-# Cloudinary
-CLOUDINARY_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Google OAuth
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-GOOGLE_CALL_BACK_URL=http://localhost:5005/api/auth/google/callback
 
 # Frontend
 FRONTEND_URL=http://localhost:5173
